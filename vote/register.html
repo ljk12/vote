@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/register.css" rel="stylesheet"/>
+		<link href="css/all.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script>
+			$(function(){
+				$("#register").click(function(){
+					var name = $("#name").val()
+					var pw = $("#password").val();
+					var upw = $("#upassword").val();
+					if(name == ""){
+						alert(name+"用户名为空");
+						return;
+					}
+					if(pw == ""){
+						alert("密码为空");
+						return;
+					}
+					if(upw == ""){
+						alert("确认密码为空");
+						return;
+					}
+					if(name.length>10 || name.length<1){
+						alert("用户名长度不规范（1-10）");
+						return;
+					}
+					if(pw != upw){
+						alert("确认密码与密码不一致");
+						return;
+					}
+					if(pw.length>12 || pw.length<6){
+						alert("密码长度不规范（6-12）");
+						return;
+					}
+					
+					$(location).attr('href','login.html');
+				});
+				
+				$("#login").click(function(){
+					$(location).attr('href','login.html')
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<table>
+				<form>
+					<tr>
+						<td>
+							<font>用户名：</font>
+						</td>
+						<td>
+							<input type="text" id="name"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<font>密码：</font>
+						</td>
+						<td>
+							<input type="password" id="password"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<font>确认密码：</font>
+						</td>
+						<td>
+							<input type="password" id="upassword"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<font>验证码：</font>
+						</td>
+						<td>
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="登录" id="login"/>
+							
+						</td>
+						<td>
+							<input type="button" value="注册" id="register"/>
+						</td>
+					</tr>
+				</form>
+			</table>
+		</div>
+	</body>
+</html>

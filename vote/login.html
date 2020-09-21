@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/login.css" rel="stylesheet"/>
+		<link href="css/all.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script>
+			$(function(){
+				$("#login").click(function(){
+					
+					var name = $("#name").val()
+					var pw = $("#password").val();
+					if(name == ""){
+						alert(name+"用户名为空");
+						return;
+					}
+					if(pw == ""){
+						alert("密码为空");
+						return;
+					}
+					$(location).attr('href','index.html');
+					
+				});
+				
+				$("#register").click(function(){
+					$(location).attr('href','register.html')
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<table>
+				<form>
+					<tr>
+						<td>
+							<font>用户名：</font>
+						</td>
+						<td>
+							<input type="text" id="name"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<font>密码：</font>
+						</td>
+						<td>
+							<input type="password" id="password"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="button" value="登录" id="login"/>
+							
+						</td>
+						<td>
+							<input type="button" value="注册" id="register"/>
+						</td>
+					</tr>
+				</form>
+			</table>
+		</div>
+	</body>
+</html>

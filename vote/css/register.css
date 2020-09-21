@@ -1,0 +1,9 @@
+.head{
+	margin: 0 auto;
+	margin-top: 200px;
+	padding: 50px;
+	text-align: left;
+	width: 20%;
+	height: 120px;
+	background-color:rgba(255,255,255,0.4);
+}
