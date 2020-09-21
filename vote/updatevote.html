@@ -16,10 +16,7 @@
 					$(".ta").append("<tr id='myp"+ ++num+"'><td><font>选项"+ num+"</font></td><td><input type='text' /></td></tr>");
 				});
 				$("#del").click(function(){
-					if(num > 2){
-						$("#myp"+num--).remove();
-					}
-					
+					$("#myp"+num--).remove();
 				})
 			});
 		
@@ -66,7 +63,7 @@
 							<input type="button" value="删除选项"  id="del"/>
 						</td>
 						<td>
-							<input type="submit" value="创建" />
+							<input type="submit" value="修改" />
 						</td>
 					</tr>
 				

@@ -20,15 +20,23 @@
 				$("#exit").click(function(){
 					$(location).attr("href","login.html");
 				});
-				var pre = true;
+				
+				$(".update").click(function(){
+					$(location).attr("href","updatevote.html");
+				});
+				var pre = false;
 				$("#preserve").click(function(){
 					if(pre == true){
 						pre = false;
-					}else{
+						$(".del").hide();
+						$(".update").hide();
+					}else if(pre == false){
 						pre = true;
+						$(".del").show();
+						$(".update").show();
 					}
-				})
-				$()
+				});
+				
 			});
 		
 		</script>
@@ -43,49 +51,45 @@
 		<div class="content">
 			<div class="option">
 				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
 				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
 			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
+				<font size="5"><a href="#" class="vote">最牛逼的人</a></font>
+				<font><a href="#" class="del">删除</a></font>
+				<font><a href="#" class="update">修改</a></font>
 			</div>
-			<div class="option">
-				<font size="5"><a href="#">最牛逼的人</a></font>
-				<font><a href="#">删除</a></font>
-				<font><a href="#">修改</a></font>
-			</div>
+			
 			
 		</div>
 		<div class="page">

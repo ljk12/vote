@@ -32,3 +32,9 @@
 	height: 50px;
 }
 
+.del{
+	display: none;
+}
+.update{
+	display: none;
+}
